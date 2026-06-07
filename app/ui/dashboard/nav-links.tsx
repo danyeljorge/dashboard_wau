@@ -1,7 +1,8 @@
 import {
-  UserGroupIcon,
+  CreditCardIcon,
   HomeIcon,
-  DocumentDuplicateIcon,
+  ArrowDownOnSquareStackIcon,
+  ChatBubbleLeftEllipsisIcon,
 } from '@heroicons/react/24/outline';
 
 // Map of links to display in the side navigation.
@@ -15,14 +16,21 @@ const links = [
 
   {
     name: 'Faturas',
-    href: '/dashboard/faturas',
-    icon: DocumentDuplicateIcon,
+    href: '/dashboard/fatura',
+    icon: CreditCardIcon,
   },
   { 
-    name: 'Clientes',
-    href: '/dashboard/membros',
-    icon: UserGroupIcon,
+    name: 'Contrato',
+    href: '/dashboard/contrato',
+    icon: ArrowDownOnSquareStackIcon,
     },
+
+    {
+      name: 'Suporte',
+      href: '/dashboard/suporte',
+      icon: ChatBubbleLeftEllipsisIcon,
+
+    }
 ];
 
 export default function NavLinks() {
